@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bulma Autobot Transformers</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar has-shadow is-white">
+    <div class="navbar-brand">
+      <a class="navbar-item">
+        <img src="assets/autobot.png" alt="site logo" style="max-height: 80px" class="p-2">
+      </a>
+      <a class="navbar-burger" id="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+    </div>
+    <div class="navbar-menu" id="nav-links">
+      <div class="navbar-end">
+        <a class="navbar-item">My Account</a>
+        <a class="navbar-item">Shopping Cart (0)</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Breadcrumbs -->
+  <section class="section pt-2 pt-0">
+    <nav class="breadcrumb has-arrow-separator">
+      <ul class="container">
+        <li><a class="has-text-grey">Autobot Transformers</a></li>
+        <li><a class="has-text-grey">Shop</a></li>
+        <li class="is-active"><a>Optimus Prime</a></li>
+      </ul>
+    </nav>
+  </section>
+
+  <!-- Product info -->
+  <section class="section">
+    <div class="container">
+      <div class="columns is-vcentered is-multiline">
+        <div class="column is-6-tablet is-3-desktop">
+          <h1 class="is-size-3-mobile is-size-1-desktop title">Autobot</h1>
+          <h2 class="is-size-3-mobile is-size-2-desktop subtitle">Optimus Prime</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates fugiat sunt tempora repudiandae labore
+            nesciunt incidunt temporibus quo rerum quas!</p>
+        </div>
+        <div class="column is-6-tablet is-5-desktop">
+          <img src="assets/optimus-prime.jpg" alt="docker coffee image" class="px-6">
+        </div>
+        <div class="column is-12-tablet is-4-desktop">
+          <div class="is-size-4 mb-4">$199.95</div>
+          <p class="mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, earum?</p>
+          <form>
+            <div class="field">
+              <div class="control mb-5">
+                <div class="select is-dark">
+                  <select>
+                    <option>Small</option>
+                    <option>Large</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <button class="button is-primary">Add to Cart</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="columns is-variable is-8">
+        <div class="column is-7-tablet">
+          <!-- tabbed content -->
+          <div class="tabs is-boxed">
+            <ul>
+              <li class="is-active" data-target="product-details"><a>Product Details</a></li>
+              <li data-target="delivery-information"><a>Delivery Information</a></li>
+            </ul>
+          </div>
+          <div class="px-2" id="tab-content">
+            <div id="product-details">
+              <h3 class="is-size-5 title">Product Details</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam provident nemo, possimus aliquid
+                voluptatum iure nam nesciunt maxime, totam eveniet voluptatem quaerat vero omnis, dolores ad perferendis
+                quisquam commodi fugiat!</p>
+            </div>
+            <div class="is-hidden" id="delivery-information">
+              <h3 class="is-size-5 title">Delivery Information</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam provident nemo, possimus aliquid
+                voluptatum iure nam nesciunt maxime, totam eveniet voluptatem quaerat vero omnis, dolores ad perferendis
+                quisquam commodi fugiat!</p>
+            </div>
+          </div>
+        </div>
+        <div class="column is-5-tablet">
+          <!-- message box -->
+          <div class="message">
+            <div class="message-header">
+              <p>Earn Points with the Autobot Club</p>
+            </div>
+            <div class="message-body">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime necessitatibus magnam repudiandae
+                deserunt tempora culpa nulla itaque, nemo impedit voluptates. Quas consequuntur, culpa nihil corrupti
+                rerum necessitatibus! Repudiandae, dolores libero!</p>
+              <div class="has-text-centered">
+                <button class="button mt-5" id="signup">Sign Up</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- cards -->
+  <section class="section is-hidden-mobile">
+    <div class="container">
+      <h3 class="is-size-4 title has-text-centered">Related Products</h3>
+      <div class="columns is-centered mt-5 is-variable is-8">
+        <div class="column is-4-tablet is-3-desktop">
+          <div class="card">
+            <div class="card-image has-text-centered px-6 pt-4" style="height:240px">
+              <img src="assets/jazz.jpg" alt="Product">
+            </div>
+            <div class="card-content">
+              <p>$12.95</p>
+              <p class="title is-size-5">Cortardo Cup</p>
+            </div>
+            <div class="card-footer">
+              <p class="card-footer-item">
+                <a href="" class="has-text-grey">View</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="column is-4-tablet is-3-desktop">
+          <div class="card">
+            <div class="card-image has-text-centered px-6 pt-4" style="height:240px">
+              <img src="assets/jetfire.jpg" alt="Product">
+            </div>
+            <div class="card-content">
+              <p>$12.95</p>
+              <p class="title is-size-5">Docker Light</p>
+            </div>
+            <div class="card-footer">
+              <p class="card-footer-item">
+                <a href="" class="has-text-grey">View</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="column is-4-tablet is-3-desktop">
+          <div class="card">
+            <div class="card-image has-text-centered px-6 pt-4" style="height:240px">
+              <img src="assets/grimlock.jpg" alt="Product">
+            </div>
+            <div class="card-content">
+              <p>$12.95</p>
+              <p class="title is-size-5">Coffee Crush</p>
+            </div>
+            <div class="card-footer">
+              <p class="card-footer-item">
+                <a href="" class="has-text-grey">View</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- modal -->
+  <div class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content has-background-white p-5">
+      <h3 class="title mb-6">Join the Club</h3>
+      <form>
+        <div class="field">
+          <label class="label">Name</label>
+          <div class="control">
+            <input type="text" class="input" placeholder="Name">
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Email</label>
+          <div class="control">
+            <input type="text" class="input" placeholder="Email">
+          </div>
+        </div>
+        <div class="field">
+          <div class="control">
+            <label class="checkbox">
+              <input type="checkbox">
+              I agree to the <a>terms and conditions</a>
+            </label>
+          </div>
+        </div>
+        <div class="mt-6 has-text-centered">
+          <button class="button is-danger">Sign Up</button>
+        </div>
+      </form>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="content has-text-centered">
+      <p>Copyright 2020 Coffee Ninja</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
